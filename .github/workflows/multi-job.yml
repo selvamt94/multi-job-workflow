@@ -56,7 +56,7 @@ jobs:
       - name: Cross compiling for all platforms  
         run: |
           echo "cross compiling for all platforms"
-          GOOS=linux GOARCH=amd64 build -o main main.go
-          GOOS=windows GOARCH=amd64 build -o main.exe main.go
-          GOOS=macos GOARCH=amd64 build -o main main.go
+          GOOS=linux GOARCH=amd64 go build -o main main.go
+          GOOS=windows GOARCH=amd64 go build -o main.exe main.go
+          GOOS=macos GOARCH=amd64 go build -o main main.go
  
